@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Игра в города</title>
+  <script src="js/goroda.js" defer></script>
+  <link rel="stylesheet" href="css/goroda.css">
+</head>
+<body>
+  <a href="index.html" class="accent-btn">Главная</a>
+  <a href="catalog.php" class="accent-btn">В каталог</a>
+  <h1>Игра в города</h1>
+  <div id="gameForm">
+  <p><span id="timer">Время на ход: 10</span></p>
+  <form action="" class="city" id="cityForm">
+    <input type="text" id="cityInput" placeholder="Введите город..">
+    <input type="submit" value="Ответить" id="submitBtn">
+  </form>
+  <button id="start">Начать игру</button>
+
+  <div id="status">
+    <div>Ходит игрок 1</div>
+  </div>
+  </div>
+
+  <ol id="history">История ответов:
+  </ol>
+</body>
+</html>

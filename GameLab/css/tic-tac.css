@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#bc{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(250, 233, 200);
+}
+.board{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-self: center;
+    justify-self: center;
+    margin-top: 5%;
+    width: 700px;
+    height: 700px;
+    gap: 5px;
+}
+.box{
+    border: 3px solid ;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+#status{
+    align-self: center;
+    justify-self: center;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.x
+{
+    background-color: brown;
+}
+
+.o
+{
+    background-color: rgb(54, 54, 230);
+}
+
+#restartGame
+{
+  display: flex;
+  justify-self: center;
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
