@@ -68,9 +68,15 @@ $games = $stmt->fetchAll();
     <link rel="stylesheet" href="css/catalog.css">
 </head>
 <body>
+
     <div class="overlay"></div> <!-- затемнение для всплывающих сообщений с играми -->
+
+
+
     <header>
-    <h2 class="logo">GameLab / Каталог</h2>
+        <div class="logo">
+            <h2>GameLab / Каталог</h2>
+        </div>
   
     <a href="index.html" class="indexlink">Главная</a>
     
@@ -109,7 +115,9 @@ $games = $stmt->fetchAll();
         <h3 class="gameTitle"><?php echo $game['title'];?></h3>                                    
         <p class="description"><?php echo $game['description'];?></p>  
         <p><?php echo $game['genretitle'];?></p>
-        <button class="playBtn">Играть</button>
+        <button class="playBtn">
+            <a href="<?php echo $game['gamelink'];?>">Играть</a>
+        </button>
         <button class="closeBtn" data-id="<?php echo $game['id'];?>">Закрыть</button>
   </div>
 </div>

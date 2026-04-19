@@ -14,50 +14,61 @@ body, #Wrap
     scroll-behavior: smooth;
 }
 
-/* header: 10vh; sliderWrap: 40vh; slider: 32vh; */
+/* header: 8vh;  */
+
+/* добавил header из каталога */
 
 
 /* H E A D E R */
 
+/*header*/
+/*{*/
+/*    margin: auto;*/
+/*    width: 100vw;*/
+/*    height: 10vh;*/
+/*    border-bottom: 2px solid #6bad14;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
 header
 {
-    margin: auto;
     width: 100vw;
-    height: 10vh;
-    border-bottom: 2px solid #6bad14;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    height: 8vh;
+    background-color: #6bad14;
 }
+
+
 #headerWrap
 {
-    width: 100%;
-    height: 100%;
-    max-width: 1440px;
-    padding: 10px;
+    width: 100vw;
+    height: 8vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 .logo
 {
-    display: flex;
-    font-size: 25px;
-    color: #6bad14;
+    padding-left: 2%;
+    color: #000000;
     font-family: arial black;
+    width: fit-content;
 }
 #menu
 {
+    padding-right: 2%;;
     display: flex;
     flex-direction: row;
     gap: 20px;
+   
 }
-.menuBtn{
-    font-size: 15px;
+.menuBtn
+{
     font-family: arial black;
-    color: #6bad14;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -234,7 +245,6 @@ main
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));            /**/
     margin: auto;
-    gap: 10px;
 }
 
 /* Карточки игр (главная) */
@@ -246,7 +256,6 @@ main
     border: 2px solid #6bad14;
     border-radius: 5px;
     height: 600px;
-    gap: 35%;
     z-index: 1; /* Чтобы контент был выше фона */
 }
 
@@ -278,8 +287,25 @@ main
     justify-items: center; /* работает на ТЕКСТЕ, но НЕ работает на ССЫЛКЕ */
     justify-content: center; /* имеет смысл, когда задан display: flex/grid */
     align-items: center;
+    transition: all 0.2s;
 }
 
+
+.playBtn > a
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none; /* убирание подчёркивания */
+    font-size: 150%;
+}
+.playBtn:hover
+{
+    background-color: #6e9935;
+}
 #gamesTitle, #advantagesTitle
 {
     color:#6bad14;

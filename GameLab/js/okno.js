@@ -3,7 +3,6 @@
   const overlay = document.querySelector('.overlay');
   const closeButtons = document.querySelectorAll('.closeBtn');
 
-// открываются 3 popup сразу получается
 
 
   showLinks.forEach(link => {
@@ -28,8 +27,7 @@
     let targetPopup = document.getElementById("popup-id-" + btnId);
     targetPopup.classList.remove("active"); // удал. класса active 
     targetPopup.style.display = 'none';
-  
-      overlay.style.display = 'none';
+    overlay.style.display = 'none';
     };
   });
 

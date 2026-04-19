@@ -3,10 +3,51 @@ body
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* H E A D E R */
+
+header
+{
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 5vh;
+  background-color: #6bad146c;
+  gap: 5%;
+}
+header > .logo
+{
+  padding-left: 2%;
+  font-family: arial black;
+  color:black;
+}
+.menu
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* работает с flex/grid */
+}
+.menu > .menuBtn
+{
+  text-decoration: none;
+  color: black;
+  text-decoration: underline;
+  font-family: arial black;
+}
+
+/* G A M E */
+
+#gameWindow
+{
   background-image: url(../media/city.png);
   background-size: cover;
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
 }
 
 h1
