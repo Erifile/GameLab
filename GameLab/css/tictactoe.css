@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#bc{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* H E A D E R */
+
+header
+{
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 5vh;
+  background-color: #6bad146c;
+  gap: 5%;
+}
+header > .logo
+{
+  padding-left: 2%;
+  font-family: arial black;
+  color:black;
+}
+
+.menu
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* работает с flex/grid */
+}
+.menu > .menuBtn
+{
+  text-decoration: none;
+  color: black;
+  text-decoration: underline;
+  font-family: arial black;
+}
+
+/* G A M E */
+
+#gameWindow
+{
+    background-color: rgb(250, 233, 200);
+    width: 100vw;
+    height: 95vh;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-self: center;
+    justify-self: center;
+    margin-top: 5%;
+    width: 700px;
+    height: 700px;
+    gap: 5px;
+}
+.box{
+    border: 3px solid ;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+#status{
+    align-self: center;
+    justify-self: center;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.x
+{
+    background-color: brown;
+}
+
+.o
+{
+    background-color: rgb(54, 54, 230);
+}
+
+#restartGame
+{
+  display: flex;
+  justify-self: center;
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}

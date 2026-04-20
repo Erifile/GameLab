@@ -1,0 +1,28 @@
+body
+{
+    background-color: rgb(146, 179, 164);
+    
+}
+#form
+{
+    width: 500px;
+    height: 700px;
+    display: flex;
+    border: 1px solid;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    transition: border 0.2s linear;
+}
+
+#form > h2
+{
+    align-self: center;
+}
+
+#form:hover
+{
+    border: 3px solid;
+}
