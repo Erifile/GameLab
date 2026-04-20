@@ -1,8 +1,0 @@
-<div class="gameCard">
-                <h3 class="gameTitle"><?php echo $game['title'];?></h3>                                    
-                <button class="favourite" data-like="false">♡</button>
-                <button class="showPopup game-item" data-genre="logic" data-id="<?php echo $game['id']; ?>">             
-                    <img class="game-img" src="<?php echo $game['imagelink'];?>" alt="">                                                              
-                </button>
-            </div>
-карточка игры
